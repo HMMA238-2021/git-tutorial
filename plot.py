@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-x = np.loadtxt('file_data.csv')
+x_chisq = np.loadtxt('file_data_chisq.csv')
 
 # the histogram of the data
-n, bins, patches = plt.hist(x, 50, density=True, facecolor='k', alpha=0.25)
+n, bins, patches = plt.hist(x_chisq, 50, density=True, facecolor='k', alpha=0.25)
 
 
 plt.xlabel('Smarts')
